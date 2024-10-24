@@ -1,0 +1,22 @@
+{	
+"mode":	"All",	
+"policyRule":	{	
+"if":	{	
+"allOf":	[	
+{	
+"field":	"type",	
+"equals":	"Microsoft.Network/virtualNetworks/subnets"	
+},	
+{	
+"not":	{	
+"field":	"name",	
+"like":	"Subnet-*"	
+}	
+}	
+]	
+},	
+"then":	{	
+"effect":	"deny"	
+}	
+}	
+}
